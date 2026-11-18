@@ -1,0 +1,16 @@
+
+### Check whether PrepX-AI API is running
+GET http://127.0.0.1:8000/
+
+### Check API documentation is available
+GET http://127.0.0.1:8000/openapi.json
+
+### Start an interview (may fail until model training)
+POST http://127.0.0.1:8000/question/start
+Content-Type: application/json
+
+{
+    "interview_category": "Software Development",
+    "job_role": "Python Developer",
+    "difficulty_level": "medium"
+}
